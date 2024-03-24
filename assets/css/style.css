@@ -280,7 +280,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header Top */
 #header.header-top {
-  height: 90px;
+  height: 100px;
   position: fixed;
   left: 0;
   top: 0;
@@ -295,6 +295,7 @@ h1, h2, h3, h4, h5, h6 {
 #header.header-top h1 {
   margin-right: auto;
   font-size: 36px;
+  margin-top: 10px;
 }
 
 #header.header-top .container {
@@ -308,7 +309,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   #header.header-top {
-    height: 60px;
+    height: 100px;
   }
   #header.header-top h1 {
     font-size: 26px;
@@ -544,6 +545,8 @@ section .container {
   min-height: 320px;
 }
 
+
+
 .codings{
   display: flex;
   flex-direction: column;
@@ -573,7 +576,12 @@ section .container {
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
+}
 
+@media (max-width:790px){
+  .cards-of{
+    flex-direction: column;
+  }
 }
 
 .img-size{
@@ -620,6 +628,7 @@ section .container {
 .coding-img{
   width: 400px;
   height: 400px;
+  margin: 20px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
