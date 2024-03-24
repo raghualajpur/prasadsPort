@@ -515,12 +515,111 @@ section .container {
   background: #042b56eb;
 }
 
+.form-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+@media (max-width:790px){
+  .form-flex{
+    flex-direction: column;
+  }
+}
+
+.mail-flex{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials .testimonial-item {
   box-sizing: content-box;
   min-height: 320px;
+}
+
+.codings{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 40px;
+}
+
+#cards-of-projects{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.height-text{
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.cards-of{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+
+}
+
+.img-size{
+  width: 230px;
+  height: 230px;
+}
+
+.form-heading {
+  font-family: "Roboto";
+  font-size: 36px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.error-message {
+  color: #dc3545;
+  font-family: "Roboto";
+  font-size: 14px;
+}
+
+.gender-field-heading {
+  color: #212529;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.over{
+  overflow-x: scroll;
+  height: 60px;
+}
+
+.cursol{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.cards{
+  margin: 30px;
+}
+
+.coding-img{
+  width: 400px;
+  height: 400px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -664,7 +763,7 @@ section .container {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  background: #09203a;
+  background: #0872ea;
   padding: 40px 40px;
   transition: all ease-in-out 0.3s;
   margin: 10px
@@ -696,7 +795,7 @@ section .container {
   top: -8px;
   height: 100%;
   width: 100%;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(234, 52, 52, 0.15);
   border-radius: 5px;
   transition: all .3s ease-out 0s;
   transform: translateZ(-1px);
